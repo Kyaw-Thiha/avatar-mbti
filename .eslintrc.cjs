@@ -31,6 +31,8 @@ const config = {
         checksVoidReturn: { attributes: false },
       },
     ],
+    "@typescript-eslint/no-empty-interface":
+      process.env.NODE_ENV === "production" ? "off" : "warn",
   },
 };
 
