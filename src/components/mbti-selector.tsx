@@ -20,24 +20,12 @@ import {
 
 const frameworks = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "infj",
+    label: "INFJ",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
-  },
-  {
-    value: "nuxt.js",
-    label: "Nuxt.js",
-  },
-  {
-    value: "remix",
-    label: "Remix",
-  },
-  {
-    value: "astro",
-    label: "Astro",
+    value: "enfj",
+    label: "ENFJ",
   },
 ];
 
@@ -71,9 +59,7 @@ export function MBTISelector() {
                 key={framework.value}
                 value={framework.value}
                 onSelect={(currentValue) => {
-                  setValue(
-                    currentValue == value ? "" : (currentValue as string),
-                  );
+                  setValue(currentValue == value ? "" : currentValue);
                   setOpen(false);
                 }}
               >
