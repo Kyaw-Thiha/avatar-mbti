@@ -11,6 +11,7 @@ import Image from "next/image";
 export default function Home() {
   const router = useRouter();
   const [buttonEnlarged, setButtonEnlarged] = useState(false);
+  const [personality, setPersonality] = useState("");
 
   return (
     <>
@@ -42,7 +43,7 @@ export default function Home() {
           <div className="text-center text-white">
             <h1 className="mb-4 text-4xl font-bold text-secondary">MBTI</h1>
             <div className="flex gap-4">
-              <MBTISelector />
+              <MBTISelector value={personality} setValue={setPersonality} />
               <AnimatePresence mode="wait">
                 {!buttonEnlarged && (
                   <motion.div
@@ -57,7 +58,10 @@ export default function Home() {
                     className="rounded-md bg-primary"
                     onClick={() => {
                       setButtonEnlarged(true);
-                      setTimeout(() => void router.push("/mbti/enfj"), 800);
+                      setTimeout(
+                        () => void router.push(`/mbti/${personality}`),
+                        800,
+                      );
                     }}
                   >
                     <motion.button

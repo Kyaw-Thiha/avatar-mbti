@@ -29,9 +29,13 @@ const frameworks = [
   },
 ];
 
-export function MBTISelector() {
+interface Props {
+  value: string;
+  setValue: (val: string) => void;
+}
+export const MBTISelector: React.FC<Props> = (props) => {
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState("");
+  // const [value, setValue] = React.useState("");
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -41,8 +45,9 @@ export function MBTISelector() {
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
-          {value
-            ? frameworks.find((framework) => framework.value === value)?.label
+          {props.value
+            ? frameworks.find((framework) => framework.value === props.value)
+                ?.label
             : "Select MBTI..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
@@ -59,14 +64,18 @@ export function MBTISelector() {
                 key={framework.value}
                 value={framework.value}
                 onSelect={(currentValue) => {
-                  setValue(currentValue == value ? "" : currentValue);
+                  props.setValue(
+                    currentValue == props.value ? "" : currentValue,
+                  );
                   setOpen(false);
                 }}
               >
                 <Check
                   className={cn(
                     "mr-2 h-4 w-4",
-                    value === framework.value ? "opacity-100" : "opacity-0",
+                    props.value === framework.value
+                      ? "opacity-100"
+                      : "opacity-0",
                   )}
                 />
                 {framework.label}
@@ -77,4 +86,4 @@ export function MBTISelector() {
       </PopoverContent>
     </Popover>
   );
-}
+};
