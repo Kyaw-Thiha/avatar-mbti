@@ -29,14 +29,22 @@ export default function Example() {
           <motion.img
             src="jake-sully.webp"
             alt="Jake Sully"
-            className="h-full w-[80%] object-cover"
+            className="h-full w-[80%] cursor-grab rounded-xl object-cover active:cursor-grabbing"
+            drag
+            dragSnapToOrigin
+            dragConstraints={{
+              top: -50,
+              left: -50,
+              right: 50,
+              bottom: 50,
+            }}
+            whileDrag={{ scale: 0.8, transition: { duration: 1 } }}
             initial={{ opacity: 0, scale: 1.5 }}
             animate={{ scale: 1, opacity: 1 }}
             whileHover={{
-              scale: 1.05,
-              transition: { duration: 1 },
+              scale: 0.95,
             }}
-            whileTap={{ scale: 0.9 }}
+            whileTap={{ scale: 0.9, transition: { duration: 1 } }}
             // style={{ opacity: 1 - (scrollYProgress as unknown as number) }}
           />
         </div>

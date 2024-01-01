@@ -43,7 +43,7 @@ export default function Home() {
             <h1 className="mb-4 text-4xl font-bold text-secondary">MBTI</h1>
             <div className="flex gap-4">
               <MBTISelector />
-              <AnimatePresence>
+              <AnimatePresence mode="wait">
                 {!buttonEnlarged && (
                   <motion.div
                     initial={{ scale: 30 }}
