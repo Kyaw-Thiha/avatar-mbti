@@ -1,4 +1,5 @@
 import { enfjData } from "./enfj";
+import { enfpData } from "./enfp";
 import { infjData } from "./infj";
 import { infpData } from "./infp";
 import { isfjData } from "./isfj";
@@ -16,6 +17,8 @@ export const getPersonalityData = (personality: string) => {
       return infpData;
     case "isfj":
       return isfjData;
+    case "enfp":
+      return enfpData;
     default:
       return infjData;
   }
