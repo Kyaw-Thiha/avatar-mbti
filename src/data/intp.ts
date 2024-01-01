@@ -4,7 +4,7 @@ export const intpData = {
   personality: {
     code: "INTP",
     name: "Logician",
-    descriptionImage: "kiri-3.webp",
+    descriptionImage: "kiri-2.jpg",
     description: `Logicians often lose themselves in thought – which isn’t necessarily a bad thing. People with this personality type hardly ever stop thinking. From the moment they wake up, their minds buzz with ideas, questions, and insights. At times, they may even find themselves conducting full-fledged debates in their own heads.
 
 Imaginative and curious, Logician personalities can find endless fascination in the workings of their own mind.
