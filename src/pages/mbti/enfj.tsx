@@ -1,10 +1,21 @@
 import Head from "next/head";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { Button } from "@/components/ui/button";
 
 export default function Example() {
-  const { scrollYProgress } = useScroll();
+  const variants = {
+    inView: {
+      opacity: 1,
+      y: 0,
+      transition: { staggerChildren: 0.2, delayChildren: 0.2, duration: 0.8 },
+    },
+    notInView: {
+      opacity: 0,
+      y: 100,
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  };
 
   return (
     <>
@@ -18,16 +29,14 @@ export default function Example() {
           <motion.img
             src="jake-sully.webp"
             alt="Jake Sully"
-            className="h-full max-w-full"
+            className="h-full w-[80%] object-cover"
             initial={{ opacity: 0, scale: 1.5 }}
-            animate={{ scale: 1 }}
+            animate={{ scale: 1, opacity: 1 }}
             whileHover={{
               scale: 1.05,
               transition: { duration: 1 },
             }}
             whileTap={{ scale: 0.9 }}
-            whileInView={{ opacity: 1 }}
-
             // style={{ opacity: 1 - (scrollYProgress as unknown as number) }}
           />
         </div>
@@ -53,11 +62,12 @@ export default function Example() {
           initial={{ y: 100 }}
           animate={{ y: -100, transition: { duration: 0.5, delay: 0.2 } }}
           exit={{ y: 100 }}
-          className="min-h-40 min-h-[1024px] bg-primary px-4 py-4 md:px-8"
+          className="min-h-40 bg-primary px-4 py-4 md:px-8"
         >
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+            variants={variants}
+            initial={"notInView"}
+            whileInView={"inView"}
             className="rounded-2xl bg-secondary p-4"
           >
             <motion.h3
@@ -95,7 +105,12 @@ export default function Example() {
             </motion.p>
           </motion.div>
 
-          <div className="mt-12">
+          <motion.div
+            variants={variants}
+            initial="notInView"
+            whileInView="inView"
+            className="mt-12"
+          >
             <motion.h3
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
@@ -150,7 +165,7 @@ export default function Example() {
               world – all of which align with the core characteristics of the
               INFJ type.
             </motion.p>
-          </div>
+          </motion.div>
         </motion.div>
       </main>
     </>

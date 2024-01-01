@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { MBTISelector } from "@/components/mbti-selector";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
@@ -19,7 +20,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="relative h-screen overflow-hidden">
+        <img
+          className="absolute left-0 top-0 -z-50 h-full w-full object-cover"
+          src="/hero.jpg"
+          alt="Hero Image"
+        />
+
         {/* Video Background */}
+        {/* 
         <video
           className="absolute left-0 top-0 -z-50 h-full w-full object-cover"
           autoPlay
@@ -28,7 +36,7 @@ export default function Home() {
         >
           <source src="/trailer.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
 
         <div className="z-10 flex h-full items-center justify-center">
           <div className="text-center text-white">
