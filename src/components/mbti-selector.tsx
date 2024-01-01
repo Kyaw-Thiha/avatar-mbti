@@ -40,16 +40,16 @@ const frameworks = [
     label: "ISFJ",
   },
   {
-    value: "ENFP",
-    label: "enfp",
+    value: "enfp",
+    label: "ENFP",
   },
   {
-    value: "INTP",
-    label: "intp",
+    value: "intp",
+    label: "INTP",
   },
   {
-    value: "ENTJ",
-    label: "entj",
+    value: "entj",
+    label: "ENTJ",
   },
 ];
 
