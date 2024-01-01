@@ -3,22 +3,18 @@ export const isfjData = {
   image: "loak.jpg",
   personality: {
     code: "ISFJ",
-    name: "Mediator",
+    name: "Defender",
     descriptionImage: "loak-2.jpg",
-    description: `Although they may seem quiet or unassuming, Mediators (INFPs) have vibrant, passionate inner lives. Creative and imaginative, they happily lose themselves in daydreams, inventing all sorts of stories and conversations in their minds. These personalities are known for their sensitivity – Mediators can have profound emotional responses to music, art, nature, and the people around them.
+    description: `In their unassuming, understated way, Defenders help make the world go round. Hardworking and devoted, people with this personality type feel a deep sense of responsibility to those around them. Defenders can be counted on to meet deadlines, remember birthdays and special occasions, uphold traditions, and shower their loved ones with gestures of care and support. But they rarely demand recognition for all that they do, preferring instead to operate behind the scenes.
 
-Idealistic and empathetic, Mediators long for deep, soulful relationships, and they feel called to help others. But because this personality type makes up such a small portion of the population, Mediators may sometimes feel lonely or invisible, adrift in a world that doesn’t seem to appreciate the traits that make them unique.`,
-    characterImage: "loak.jpg",
-    characterLink: `ISFP individuals are often described as sensitive, quiet, easy-going, and good-natured. They are usually deeply devoted to those they care about and value harmony and peace. They are action-oriented and focus on the present moment. Neytiri demonstrates this through her actions and decisions in the story.
+    This is a capable, can-do personality type, with a wealth of versatile gifts. Though sensitive and caring, Defenders also have excellent analytical abilities and an eye for detail. And despite their reserve, they tend to have well-developed people skills and robust social relationships. Defenders are truly more than the sum of their parts, and their varied strengths shine in even the most ordinary aspects of their daily lives.`,
+    characterImage: "loak-3.webp",
+    characterLink: `An influential factor in affirming his ISFJ personality trait is his relationship with others. He demonstrates his caring nature while engaging with Payakan, the intelligent and pacifist whale-like species. From him, he absorbs the pain and injustice experienced after being cast out due to an attack on human whalers. This empathetic tendency marks a key trait of ISFJs, who are known for their compassionate and kind nature.
 
-She is seen as deeply devoted to her family, and continually acts to protect them from harm. This is evident when Quaritch and his subordinates capture Jake's children, and Neytiri arrives to free them, showing her protective nature and deep commitment to those she loves.
+Throughout the plot, he also evidences a strong commitment to harmony, a pivotal ISFJ personality trait. He apologizes for initiating a fight, accepts blame for a dangerous hunting trip which he did not instigate, and befriends the outcast, Payakan. These actions reflect his inner sense of responsibility and desire to maintain harmony, common traits in those with an ISFJ personality.
     
-ISFP individuals also value peace and harmony, often going to great lengths to avoid conflict. When the danger posed by Spider's knowledge becomes apparent, Neytiri, along with Jake and their family, relocate themselves for safety, demonstrating her dislike for conflict and her commitment to maintaining peace and harmony in her family.
+Lo'ak's actions in stressful situations also hint at his ISFJ personality. When his sister Kiri suffers a seizure, he supports his family, revealing his protective nature, characteristic of ISFJs. Furthermore, his choice to warn Payakan about the impending Tulkun killings signifies his innate instinct to protect and help those whom he has formed deep connections with.
     
-ISFPs are also known as being very in-touch with their environment and highly perceptive. This can be seen in Neytiri's interaction and deep connection with the world of Pandora. She is able to integrate easily with the Metkayina clan, further highlighting her adaptability and pragmatism.
-    
-Finally, ISFPs are fiercely independent, placing great importance on their personal freedom. This can be seen in Neytiri's resistance against the colonization efforts by the RDA. Despite the challenges, she remains determined to protect her way of life and personal liberties.
-    
-In conclusion, through her decisions and actions in the plot of Avatar: The Way of Water, Neytiri consistently aligns with the traits of an ISFP. These are shown through her deep devotion to her family, her actions to maintain peace and avoid conflict, her perceptive connection to the environment around her, and her stance for personal freedom.`,
+These instances illuminate Lo'ak's integrity, loyalty, and altruism, underlining his ISFJ personality type, and his consistent application of these traits throughout the plot reinforces this reasoning. He is compassionate, understanding, and prone to go out of his way to take care of others, even at his own risk - common traits of an ISFJ personality.`,
   },
 };
