@@ -51,6 +51,10 @@ const frameworks = [
     value: "entj",
     label: "ENTJ",
   },
+  {
+    value: "estj",
+    label: "ESTJ",
+  },
 ];
 
 interface Props {
