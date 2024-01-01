@@ -27,6 +27,10 @@ const frameworks = [
     value: "enfj",
     label: "ENFJ",
   },
+  {
+    value: "isfp",
+    label: "ISFP",
+  },
 ];
 
 interface Props {

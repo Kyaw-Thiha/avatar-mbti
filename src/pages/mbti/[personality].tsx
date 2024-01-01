@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 
-import { Button } from "@/components/ui/button";
 import { galada, playfairDisplay, poppins } from "@/utils/fonts";
 import type {
   GetServerSidePropsContext,
